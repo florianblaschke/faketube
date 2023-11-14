@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={GeistSans.className}>
         <FakeTubeNav>
-          <main className="min-h-screen relative md:pl-16">{children}</main>
+          <main className="min-h-screen relative md:pl-16 overflow-y-scroll">
+            {children}
+          </main>
         </FakeTubeNav>
       </body>
     </html>
